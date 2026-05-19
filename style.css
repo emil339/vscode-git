@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #1a8cff;
+    --blue-dark: #0066cc;
+    --cyan: #00d4ff;
+    --bg: #f0f8ff;
+    --text: #1a1a2e;
+    --text-light: #4a4a6a;
+    --shadow: 0 4px 24px rgba(26, 140, 255, 0.12);
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* ── HEADER ── */
+
+header {
+    background: linear-gradient(135deg, var(--blue-dark), var(--blue), var(--cyan));
+    color: white;
+    padding: 48px 40px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 28px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: background 0.2s;
+}
+
+header nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ── HR ── */
+
+hr {
+    border: none;
+    border-top: 2px solid rgba(26, 140, 255, 0.12);
+    margin: 0;
+}
+
+/* ── SECTIONS ── */
+
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 72px 24px;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--text);
+}
+
+section h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    color: var(--blue-dark);
+}
+
+section p {
+    color: var(--text-light);
+    margin-bottom: 12px;
+}
+
+/* ── HERO ── */
+
+#hero {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#hero h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+#hero ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin: 28px 0;
+    padding: 28px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+#hero ul li {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+#hero ul li strong {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--blue);
+    font-weight: 900;
+}
+
+#hero a {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    color: white;
+    text-decoration: none;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(26, 140, 255, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 8px;
+}
+
+#hero a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(26, 140, 255, 0.5);
+}
+
+/* ── UTILISATION ── */
+
+#utilisation {
+    background: white;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#utilisation > * {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#utilisation h3 {
+    background: var(--bg);
+    border-left: 4px solid var(--blue);
+    padding: 12px 20px;
+    border-radius: 0 12px 12px 0;
+    margin-top: 28px;
+}
+
+/* ── AVANTAGES ── */
+
+#avantages h3 {
+    color: var(--blue);
+    border-bottom: 1px solid rgba(26, 140, 255, 0.15);
+    padding-bottom: 6px;
+}
+
+/* ── PRODUIT / TABLE ── */
+
+#produit table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+#produit table th {
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    color: white;
+    padding: 14px 20px;
+    text-align: left;
+    font-weight: 700;
+}
+
+#produit table td {
+    padding: 13px 20px;
+    border-bottom: 1px solid #e8f0ff;
+    color: var(--text-light);
+}
+
+#produit table td:first-child {
+    font-weight: 600;
+    color: var(--text);
+    width: 200px;
+}
+
+#produit table tr:last-child td {
+    border-bottom: none;
+}
+
+#produit table tr:nth-child(even) td {
+    background: #f7faff;
+}
+
+#produit del {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+#produit a {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    color: white;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-top: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 16px rgba(26, 140, 255, 0.3);
+}
+
+#produit a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(26, 140, 255, 0.45);
+}
+
+/* ── TÉMOIGNAGES ── */
+
+#temoignages {
+    background: linear-gradient(135deg, #e8f4ff, #f0fbff);
+    max-width: 100%;
+    padding: 72px 24px;
+}
+
+#temoignages h2,
+#temoignages > p {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: var(--shadow);
+    border: none;
+    margin: 24px auto;
+    max-width: 900px;
+}
+
+blockquote p {
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+blockquote footer {
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: var(--blue);
+    background: none;
+    padding: 0;
+    text-align: left;
+}
+
+/* ── FAQ ── */
+
+#faq {
+    background: white;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#faq > * {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#faq h3 {
+    background: var(--bg);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 16px;
+    color: var(--text);
+}
+
+#faq p {
+    padding: 0 20px 8px;
+}
+
+/* ── COMMANDER ── */
+
+#commander {
+    background: linear-gradient(135deg, var(--blue-dark), var(--blue), var(--cyan));
+    max-width: 100%;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+#commander h2 {
+    color: white;
+    font-size: 2.2rem;
+}
+
+#commander p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+}
+
+#commander strong {
+    color: white;
+    font-size: 1.8rem;
+}
+
+#commander a {
+    display: inline-block;
+    background: white;
+    color: var(--blue-dark);
+    text-decoration: none;
+    padding: 18px 48px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 20px 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#commander a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+#commander ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+#commander ul li {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+}
+
+#commander ul li::before {
+    content: '✓ ';
+    font-weight: 700;
+}
+
+/* ── FOOTER ── */
+
+footer {
+    background: var(--text);
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+    padding: 48px 24px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+footer strong {
+    color: var(--cyan);
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: var(--cyan);
+}
+
+/* ── RESPONSIVE ── */
+
+@media (max-width: 640px) {
+    header h1 { font-size: 2.2rem; }
+    #hero h2 { font-size: 1.7rem; }
+    #hero ul { gap: 16px; }
+    section h2 { font-size: 1.6rem; }
+    #produit table td:first-child { width: auto; }
+    #commander strong { font-size: 1.4rem; }
+}
